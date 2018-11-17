@@ -138,9 +138,12 @@ h3,
 h4,
 h5 {
   font-family: "Raleway", sans-serif;
+  color: hsl(243, 87%, 12%);
 }
 h1 {
-  font-size: 4rem;
+  font-size: 4.17rem;
+  line-height: 1.5;
+  font-weight: bolder;
 }
 h2 {
   font-size: 3.2rem;
@@ -184,7 +187,7 @@ img {
   color: hsl(243, 87%, 12%);
 }
 main .home-header {
-  margin-top: 83px;
+  margin-top: 70px;
   padding: 0 5.5% 0 5.5%;
   display: flex;
   flex-direction: row;
@@ -192,6 +195,10 @@ main .home-header {
   align-items: flex-start;
   flex-wrap: nowrap;
 }
+main .home-header .cta {
+  margin-top: 90px;
+}
 main .home-header .header-img {
+  margin-top: 15px;
   max-width: 50%;
 }
