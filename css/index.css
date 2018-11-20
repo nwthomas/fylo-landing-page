@@ -184,6 +184,9 @@ img {
   align-items: flex-start;
   flex-wrap: no-wrap;
 }
+.nav .nav-logo {
+  width: 40%;
+}
 .nav div {
   margin-top: 15px;
   width: 100%;
@@ -199,6 +202,14 @@ img {
 }
 .nav div a:hover {
   color: hsl(0, 0%, 55%);
+}
+footer {
+  padding: 110px 5.6% 100px;
+  background: hsl(243, 87%, 12%);
+  width: 100%;
+}
+footer .footer-logo {
+  width: 60%;
 }
 main .home-header {
   margin-top: 70px;
@@ -431,12 +442,4 @@ main .content-access .access-email .cta-submit:hover {
 main .content-access .access-email .cta-submit .footer {
   background: hsl(243, 87%, 12%);
   padding-bottom: 300px;
-}
-main footer {
-  padding: 100px 5.6% 0;
-  background: hsl(243, 87%, 12%);
-}
-main footer .footer-logo a .footer-log-svg {
-  color: white;
-  fill: white;
 }
