@@ -31,23 +31,7 @@ main {
         .cta-submit {
           margin-top: 26px;
           margin-left: 2.5%;
-          border: none;
-          width: 31.2%;
-          height: 45px;
-          background: @submit-button;
-          .border-radius(3px);
-          color: white;
-          font-size: 1.35rem;
-          font-weight: 700;
-          -webkit-box-shadow: 11px 11px 20px -9px rgba(0, 0, 0, 0.2);
-          -moz-box-shadow: 11px 11px 20px -9px rgba(0, 0, 0, 0.2);
-          box-shadow: 11px 11px 20px -9px rgba(0, 0, 0, 0.2);
-          outline-width: 0;
-
-          &:hover {
-            background: @very-dark-blue;
-            cursor: pointer;
-          }
+          .btn-template();
         }
       }
     }
@@ -67,7 +51,7 @@ main {
     }
 
     .productive-content {
-      padding: 67px 5.5% 148px 5.5%;
+      padding: 67px 5.5% 109px 5.5%;
       background: #f7f7fe;
       .center(row, space-between, flex-start, nowrap);
 
@@ -100,16 +84,49 @@ main {
 
       .quote {
         background: white;
-        padding: 10px 3%;
+        padding: 27px 0 0 4.5%;
         width: 48.5%;
         height: 215px;
         .border-radius(3px);
         -webkit-box-shadow: 0px 0px 19px 2px rgba(0, 0, 0, 0.06);
         -moz-box-shadow: 0px 0px 19px 2px rgba(0, 0, 0, 0.06);
         box-shadow: 0px 0px 19px 2px rgba(0, 0, 0, 0.06);
+        .center(column, flex-start, flex-start, nowrap);
 
-        p {
-          font-size: 1.16rem;
+        .quote-content {
+          padding: 12px 0 15px;
+          line-height: 2.3rem;
+          font-size: 1.4rem;
+          max-width: 90%;
+        }
+
+        .quote-picture-position {
+          .center(row, flex-start, flex-start, nowrap);
+          width: 100%;
+
+          img {
+            padding: o;
+            max-width: 10%;
+            .border-radius(50%);
+          }
+
+          .quote-person {
+            width: 100%;
+            padding: 0;
+          }
+
+          .quote-attribution {
+            margin: 0;
+            padding: 0 2%;
+            font-size: 1.3rem;
+          }
+
+          .quote-position {
+            margin: 0;
+            padding: 0 2%;
+            font-size: 0.9rem;
+            width: 100%;
+          }
         }
       }
 
@@ -121,10 +138,57 @@ main {
   }
 
   .content-access {
-    padding: 0 5.5% 0 5.5%;
+    .center(row, space-between, flex-start, nowrap);
+    margin-top: -2px;
+    padding: 105px 5.5% 88px 5.5%;
+    background: @desaturated-blue;
+
+    .access-text {
+      width: 41%;
+
+      h3 {
+        color: white;
+      }
+
+      p {
+        color: white;
+        padding-top: 24px;
+        font-size: 1.71rem;
+        line-height: 1.41;
+      }
+    }
+
+    .access-email {
+      .center(column, flex-start, flex-start, nowrap);
+      padding-top: 7px;
+      width: 40.7%;
+
+      .cta-email {
+        height: 48px;
+        width: 92%;
+        .border-radius(3px);
+        border: 0;
+        padding-left: 23px;
+        font-size: 1.2rem;
+        color: @light-gray;
+      }
+
+      .cta-submit {
+        margin-top: 16px;
+        .btn-template();
+        height: 48px;
+      }
+    }
   }
 
   footer {
-    padding: 0 5.5% 0 5.5%;
+    padding: 100px 5.6% 0;
+    background: @footer-bg;
+
+    .footer-logo {
+      img {
+        color: white;
+      }
+    }
   }
 }

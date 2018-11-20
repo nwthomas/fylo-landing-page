@@ -150,6 +150,10 @@ h2 {
   line-height: 1.5;
   font-weight: bolder;
 }
+h3 {
+  font-size: 3.33rem;
+  font-weight: bolder;
+}
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
@@ -236,7 +240,7 @@ main .home-header .cta .inputs .cta-submit {
   margin-top: 26px;
   margin-left: 2.5%;
   border: none;
-  width: 31.2%;
+  width: 200px;
   height: 45px;
   background: #285bf8;
   border-radius: 3px;
@@ -254,6 +258,10 @@ main .home-header .cta .inputs .cta-submit:hover {
   background: hsl(243, 87%, 12%);
   cursor: pointer;
 }
+main .home-header .cta .inputs .cta-submit .footer {
+  background: hsl(243, 87%, 12%);
+  padding-bottom: 300px;
+}
 main .home-header .header-img {
   margin-top: 15px;
   max-width: 50%;
@@ -266,7 +274,7 @@ main .content-productive .content-background {
   margin: 0 0 -10px 0;
 }
 main .content-productive .productive-content {
-  padding: 67px 5.5% 148px 5.5%;
+  padding: 67px 5.5% 109px 5.5%;
   background: #f7f7fe;
   display: flex;
   flex-direction: row;
@@ -299,7 +307,7 @@ main .content-productive .productive-content a img {
 }
 main .content-productive .productive-content .quote {
   background: white;
-  padding: 10px 3%;
+  padding: 27px 0 0 4.5%;
   width: 48.5%;
   height: 215px;
   border-radius: 3px;
@@ -308,17 +316,124 @@ main .content-productive .productive-content .quote {
   -webkit-box-shadow: 0px 0px 19px 2px rgba(0, 0, 0, 0.06);
   -moz-box-shadow: 0px 0px 19px 2px rgba(0, 0, 0, 0.06);
   box-shadow: 0px 0px 19px 2px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
 }
-main .content-productive .productive-content .quote p {
-  font-size: 1.16rem;
+main .content-productive .productive-content .quote .quote-content {
+  padding: 12px 0 15px;
+  line-height: 2.3rem;
+  font-size: 1.4rem;
+  max-width: 90%;
+}
+main .content-productive .productive-content .quote .quote-picture-position {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+main .content-productive .productive-content .quote .quote-picture-position img {
+  padding: o;
+  max-width: 10%;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+main .content-productive .productive-content .quote .quote-picture-position .quote-person {
+  width: 100%;
+  padding: 0;
+}
+main .content-productive .productive-content .quote .quote-picture-position .quote-attribution {
+  margin: 0;
+  padding: 0 2%;
+  font-size: 1.3rem;
+}
+main .content-productive .productive-content .quote .quote-picture-position .quote-position {
+  margin: 0;
+  padding: 0 2%;
+  font-size: 0.9rem;
+  width: 100%;
 }
 main .content-productive .productive-content .productive-content-image {
   padding-top: 30px;
   max-width: 42.6%;
 }
 main .content-access {
-  padding: 0 5.5% 0 5.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  margin-top: -2px;
+  padding: 105px 5.5% 88px 5.5%;
+  background: hsl(238, 22%, 44%);
+}
+main .content-access .access-text {
+  width: 41%;
+}
+main .content-access .access-text h3 {
+  color: white;
+}
+main .content-access .access-text p {
+  color: white;
+  padding-top: 24px;
+  font-size: 1.71rem;
+  line-height: 1.41;
+}
+main .content-access .access-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  padding-top: 7px;
+  width: 40.7%;
+}
+main .content-access .access-email .cta-email {
+  height: 48px;
+  width: 92%;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border: 0;
+  padding-left: 23px;
+  font-size: 1.2rem;
+  color: hsl(0, 0%, 75%);
+}
+main .content-access .access-email .cta-submit {
+  margin-top: 16px;
+  border: none;
+  width: 200px;
+  height: 45px;
+  background: #285bf8;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  color: white;
+  font-size: 1.35rem;
+  font-weight: 700;
+  -webkit-box-shadow: 11px 11px 20px -9px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 11px 11px 20px -9px rgba(0, 0, 0, 0.2);
+  box-shadow: 11px 11px 20px -9px rgba(0, 0, 0, 0.2);
+  outline-width: 0;
+  height: 48px;
+}
+main .content-access .access-email .cta-submit:hover {
+  background: hsl(243, 87%, 12%);
+  cursor: pointer;
+}
+main .content-access .access-email .cta-submit .footer {
+  background: hsl(243, 87%, 12%);
+  padding-bottom: 300px;
 }
 main footer {
-  padding: 0 5.5% 0 5.5%;
+  padding: 100px 5.6% 0;
+  background: hsl(243, 87%, 12%);
+}
+main footer .footer-logo img {
+  color: white;
 }

@@ -6,17 +6,6 @@
   flex-wrap: @wrap;
 }
 
-.btn-template(@background: @button-bg, @color: white, @radius: 15px, @padding: 13px 2%, @font: 1.8rem) {
-  text-align: center;
-  background: @background;
-  color: @color;
-  -webkit-border-radius: @radius;
-  -moz-border-radius: @radius;
-  border-radius: @radius;
-  padding: @padding;
-  font-size: @font;
-}
-
 .border(@size: 1px, @style: solid, @color: black) {
   border: @size @style @color;
 }
@@ -25,4 +14,29 @@
   border-radius: @size;
   -moz-border-radius: @size;
   -webkit-border-radius: @size;
+}
+
+.btn-template() {
+  border: none;
+  width: 200px;
+  height: 45px;
+  background: @submit-button;
+  .border-radius(3px);
+  color: white;
+  font-size: 1.35rem;
+  font-weight: 700;
+  -webkit-box-shadow: 11px 11px 20px -9px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 11px 11px 20px -9px rgba(0, 0, 0, 0.2);
+  box-shadow: 11px 11px 20px -9px rgba(0, 0, 0, 0.2);
+  outline-width: 0;
+
+  &:hover {
+    background: @very-dark-blue;
+    cursor: pointer;
+  }
+
+  .footer {
+    background: @footer-bg;
+    padding-bottom: 300px;
+  }
 }
