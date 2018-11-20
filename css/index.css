@@ -191,6 +191,9 @@ img {
 .nav div a {
   color: hsl(243, 87%, 12%);
 }
+.nav div a:hover {
+  color: hsl(0, 0%, 55%);
+}
 main .home-header {
   margin-top: 70px;
   padding: 0 5.5% 0 5.5%;
@@ -263,7 +266,7 @@ main .content-productive .content-background {
   margin: 0 0 -10px 0;
 }
 main .content-productive .productive-content {
-  padding: 67px 5.5% 0 5.5%;
+  padding: 67px 5.5% 170px 5.5%;
   background: #f7f7fe;
   display: flex;
   flex-direction: row;
