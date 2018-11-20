@@ -177,23 +177,25 @@ img {
 .nav {
   margin: 65px 0 20px;
   padding: 0 5.5%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: no-wrap;
 }
 .nav div {
   margin-top: 15px;
-  width: 21.3%;
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-start;
   flex-wrap: nowrap;
 }
 .nav div a {
   color: hsl(243, 87%, 12%);
+  margin-left: 55px;
 }
 .nav div a:hover {
   color: hsl(0, 0%, 55%);
@@ -294,7 +296,7 @@ main .content-productive .productive-content p {
 main .content-productive .productive-content a {
   display: inline-block;
   position: relative;
-  width: 22.7%;
+  width: 166px;
   padding-bottom: 7px;
   font-size: 1.6rem;
   border-bottom: 1px solid hsl(170, 45%, 43%);
@@ -308,7 +310,7 @@ main .content-productive .productive-content a img {
 main .content-productive .productive-content .quote {
   background: white;
   padding: 27px 0 0 4.5%;
-  width: 48.5%;
+  width: 355px;
   height: 215px;
   border-radius: 3px;
   -moz-border-radius: 3px;
@@ -434,6 +436,7 @@ main footer {
   padding: 100px 5.6% 0;
   background: hsl(243, 87%, 12%);
 }
-main footer .footer-logo img {
+main footer .footer-logo a .footer-log-svg {
   color: white;
+  fill: white;
 }

@@ -1,15 +1,17 @@
 .nav {
   margin: 65px 0 20px;
   padding: 0 5.5%;
-  .center(row, space-between, flex-start, no-wrap);
+  width: 100%;
+  .center(row, flex-start, flex-start, no-wrap);
 
   div {
     margin-top: 15px;
-    width: 21.3%;
-    .center(row, space-between, flex-start, nowrap);
+    width: 100%;
+    .center(row, flex-end, flex-start, nowrap);
 
     a {
       color: @nav-links;
+      margin-left: 55px;
 
       &:hover {
         color: darken(@light-gray, 20%);
