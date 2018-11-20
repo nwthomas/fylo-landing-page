@@ -6,11 +6,83 @@ main {
 
     .cta {
       margin-top: 90px;
+      max-width: 50%;
+
+      p {
+        margin-top: 14px;
+        max-width: 90%;
+      }
+
+      .inputs {
+        .center(row, flex-start, flex-start, nowrap);
+
+        .cta-text {
+          margin-top: 26px;
+          height: 45px;
+          width: 49.9%;
+          border: 1px solid @very-dark-blue;
+          .border-radius(3px);
+          padding-left: 3%;
+          padding-top: 5px;
+          font-size: 1.4rem;
+          letter-spacing: 1px;
+          color: @light-gray;
+        }
+        .cta-submit {
+          margin-top: 26px;
+          margin-left: 2.5%;
+          border: none;
+          width: 31.2%;
+          height: 45px;
+          background: @submit-button;
+          .border-radius(3px);
+          color: white;
+          font-size: 1.35rem;
+          font-weight: 700;
+          -webkit-box-shadow: 11px 11px 20px -9px rgba(0, 0, 0, 0.2);
+          -moz-box-shadow: 11px 11px 20px -9px rgba(0, 0, 0, 0.2);
+          box-shadow: 11px 11px 20px -9px rgba(0, 0, 0, 0.2);
+          outline-width: 0;
+
+          &:hover {
+            background: @very-dark-blue;
+            cursor: pointer;
+          }
+        }
+      }
     }
 
     .header-img {
       margin-top: 15px;
       max-width: 50%;
     }
+  }
+
+  .content-productive {
+    margin-top: 160px;
+
+    .content-background {
+      padding: 0;
+      margin: 0 0 -10px 0;
+    }
+
+    .productive-content {
+      padding: 67px 5.5% 0 5.5%;
+      background: #f7f7fe;
+      .center(row, space-between, flex-start, nowrap);
+
+      .productive-content-image {
+        padding-top: 30px;
+        max-width: 42.6%;
+      }
+    }
+  }
+
+  .content-access {
+    padding: 0 5.5% 0 5.5%;
+  }
+
+  footer {
+    padding: 0 5.5% 0 5.5%;
   }
 }
