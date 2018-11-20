@@ -252,8 +252,19 @@ footer .footer-links-two a:hover {
   color: hsl(238, 22%, 44%);
 }
 footer .social-links {
+  margin-left: 16.1%;
+  margin-top: 76px;
   display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+footer .social-links svg {
+  height: 30px;
   fill: white;
+  margin-right: 14px;
 }
 main .home-header {
   margin-top: 70px;
