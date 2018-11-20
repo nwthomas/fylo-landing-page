@@ -266,7 +266,7 @@ main .content-productive .content-background {
   margin: 0 0 -10px 0;
 }
 main .content-productive .productive-content {
-  padding: 67px 5.5% 170px 5.5%;
+  padding: 67px 5.5% 148px 5.5%;
   background: #f7f7fe;
   display: flex;
   flex-direction: row;
@@ -291,11 +291,26 @@ main .content-productive .productive-content a {
   font-size: 1.6rem;
   border-bottom: 1px solid hsl(170, 45%, 43%);
   color: hsl(170, 45%, 43%);
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 main .content-productive .productive-content a img {
   padding: 2px 0 0 4%;
   position: absolute;
+}
+main .content-productive .productive-content .quote {
+  background: white;
+  padding: 10px 3%;
+  width: 48.5%;
+  height: 215px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 19px 2px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 0px 0px 19px 2px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 0px 19px 2px rgba(0, 0, 0, 0.06);
+}
+main .content-productive .productive-content .quote p {
+  font-size: 1.16rem;
 }
 main .content-productive .productive-content .productive-content-image {
   padding-top: 30px;
