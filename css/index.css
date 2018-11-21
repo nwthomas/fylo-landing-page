@@ -204,7 +204,7 @@ img {
   color: hsl(0, 0%, 55%);
 }
 footer {
-  padding: 110px 15% 30px 5.6%;
+  padding: 110px 15% 50px 5.6%;
   background: hsl(243, 87%, 12%);
   width: 100%;
   display: flex;
@@ -213,11 +213,25 @@ footer {
   align-items: flex-start;
   flex-wrap: nowrap;
 }
-footer .footer-contact a {
-  width: 100%;
+footer .footer-contact {
+  color: white;
+  width: 39%;
 }
-footer .footer-contact a svg {
-  fill: white;
+footer .footer-contact address {
+  margin-top: 25px;
+  margin-left: 2px;
+}
+footer .footer-contact address div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: 1.8rem;
+  margin-bottom: 21px;
+}
+footer .footer-contact address div img {
+  margin-right: 4.4%;
 }
 footer .footer-links-one {
   display: flex;
@@ -225,7 +239,6 @@ footer .footer-links-one {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: nowrap;
-  margin-left: 24%;
   margin-top: 79px;
 }
 footer .footer-links-one a {
@@ -241,7 +254,7 @@ footer .footer-links-two {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: nowrap;
-  margin-left: 17.5%;
+  margin-left: 17.2%;
   margin-top: 79px;
 }
 footer .footer-links-two a {
@@ -252,8 +265,8 @@ footer .footer-links-two a:hover {
   color: hsl(238, 22%, 44%);
 }
 footer .social-links {
-  margin-left: 16.1%;
   margin-top: 76px;
+  margin-left: 16%;
   display: inline-block;
   display: flex;
   flex-direction: row;
