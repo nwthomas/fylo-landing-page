@@ -4,6 +4,10 @@ main {
     padding: 0 5.5% 0 5.5%;
     .center(row, space-between, flex-start, nowrap);
 
+    @media @tablet {
+      .center(column-reverse, flex-start, center, nowrap);
+    }
+
     .cta {
       margin-top: 90px;
       max-width: 50%;
@@ -39,6 +43,11 @@ main {
     .header-img {
       margin-top: 15px;
       max-width: 50%;
+
+      @media @tablet {
+        margin-top: 120px;
+        max-width: 92%;
+      }
     }
   }
 

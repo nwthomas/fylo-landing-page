@@ -310,6 +310,15 @@ main .home-header {
   align-items: flex-start;
   flex-wrap: nowrap;
 }
+@media (max-width: 800px) {
+  main .home-header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+}
 main .home-header .cta {
   margin-top: 90px;
   max-width: 50%;
@@ -368,6 +377,12 @@ main .home-header .cta .inputs .cta-submit .footer {
 main .home-header .header-img {
   margin-top: 15px;
   max-width: 50%;
+}
+@media (max-width: 800px) {
+  main .home-header .header-img {
+    margin-top: 120px;
+    max-width: 92%;
+  }
 }
 main .content-productive {
   margin-top: 160px;
