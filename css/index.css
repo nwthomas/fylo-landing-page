@@ -184,8 +184,18 @@ img {
   align-items: flex-start;
   flex-wrap: no-wrap;
 }
+@media (max-width: 800px) {
+  .nav {
+    margin: 50px 0 0 1%;
+  }
+}
 .nav .nav-logo {
   width: 40%;
+}
+@media (max-width: 800px) {
+  .nav .nav-logo {
+    width: 32%;
+  }
 }
 .nav div {
   margin-top: 15px;
@@ -196,12 +206,24 @@ img {
   align-items: flex-start;
   flex-wrap: nowrap;
 }
+@media (max-width: 800px) {
+  .nav div {
+    margin-right: 2%;
+    margin-top: 10px;
+  }
+}
 .nav div a {
   color: hsl(243, 87%, 12%);
   margin-left: 55px;
 }
 .nav div a:hover {
   color: hsl(0, 0%, 55%);
+}
+@media (max-width: 800px) {
+  .nav div a {
+    font-size: 2.45rem;
+    margin-left: 9.5%;
+  }
 }
 footer {
   padding: 110px 15% 50px 5.6%;

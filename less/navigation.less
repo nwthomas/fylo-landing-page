@@ -4,8 +4,16 @@
   width: 100%;
   .center(row, flex-start, flex-start, no-wrap);
 
+  @media @tablet {
+    margin: 50px 0 0 1%;
+  }
+
   .nav-logo {
     width: 40%;
+
+    @media @tablet {
+      width: 32%;
+    }
   }
 
   div {
@@ -13,12 +21,22 @@
     width: 100%;
     .center(row, flex-end, flex-start, nowrap);
 
+    @media @tablet {
+      margin-right: 2%;
+      margin-top: 10px;
+    }
+
     a {
       color: @nav-links;
       margin-left: 55px;
 
       &:hover {
         color: darken(@light-gray, 20%);
+      }
+
+      @media @tablet {
+        font-size: 2.45rem;
+        margin-left: 9.5%;
       }
     }
   }
