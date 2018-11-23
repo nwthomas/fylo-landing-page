@@ -323,9 +323,41 @@ main .home-header .cta {
   margin-top: 90px;
   max-width: 50%;
 }
+@media (max-width: 800px) {
+  main .home-header .cta {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  main .home-header .cta h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 5.2rem;
+    font-weight: bolder;
+    line-height: 1.4;
+  }
+}
 main .home-header .cta p {
   margin-top: 14px;
   max-width: 90%;
+}
+@media (max-width: 800px) {
+  main .home-header .cta p {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2.87rem;
+    line-height: 1.47;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
 }
 main .home-header .cta .inputs {
   display: flex;
@@ -333,6 +365,17 @@ main .home-header .cta .inputs {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: nowrap;
+}
+@media (max-width: 800px) {
+  main .home-header .cta .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 38px 0;
+  }
 }
 main .home-header .cta .inputs .cta-text {
   margin-top: 26px;
@@ -347,6 +390,15 @@ main .home-header .cta .inputs .cta-text {
   font-size: 1.4rem;
   letter-spacing: 1px;
   color: hsl(0, 0%, 75%);
+}
+@media (max-width: 800px) {
+  main .home-header .cta .inputs .cta-text {
+    width: 100%;
+    height: 80px;
+    padding: 0 0 0 47px;
+    width: 91%;
+    font-size: 2.5rem;
+  }
 }
 main .home-header .cta .inputs .cta-submit {
   margin-top: 26px;
@@ -373,6 +425,14 @@ main .home-header .cta .inputs .cta-submit:hover {
 main .home-header .cta .inputs .cta-submit .footer {
   background: hsl(243, 87%, 12%);
   padding-bottom: 300px;
+}
+@media (max-width: 800px) {
+  main .home-header .cta .inputs .cta-submit {
+    margin: 31px 0 0 0;
+    width: 91%;
+    height: 80px;
+    font-size: 2.9rem;
+  }
 }
 main .home-header .header-img {
   margin-top: 15px;

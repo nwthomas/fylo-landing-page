@@ -12,13 +12,42 @@ main {
       margin-top: 90px;
       max-width: 50%;
 
+      @media @tablet {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 75px;
+        .center(column, flex-start, center, nowrap);
+
+        h1 {
+          width: 100%;
+          text-align: center;
+          font-size: 5.2rem;
+          font-weight: bolder;
+          line-height: 1.4;
+        }
+      }
+
       p {
         margin-top: 14px;
         max-width: 90%;
+
+        @media @tablet {
+          margin-top: 50px;
+          text-align: center;
+          font-size: 2.87rem;
+          line-height: 1.47;
+          .center(row, center, flex-start, nowrap);
+        }
       }
 
       .inputs {
         .center(row, flex-start, flex-start, nowrap);
+
+        @media @tablet {
+          .center(column, flex-start, center, nowrap);
+          width: 100%;
+          margin: 38px 0;
+        }
 
         .cta-text {
           margin-top: 26px;
@@ -31,11 +60,26 @@ main {
           font-size: 1.4rem;
           letter-spacing: 1px;
           color: @light-gray;
+
+          @media @tablet {
+            width: 100%;
+            height: 80px;
+            padding: 0 0 0 47px;
+            width: 91%;
+            font-size: 2.5rem;
+          }
         }
         .cta-submit {
           margin-top: 26px;
           margin-left: 2.5%;
           .btn-template();
+
+          @media @tablet {
+            margin: 31px 0 0 0;
+            width: 91%;
+            height: 80px;
+            font-size: 2.9rem;
+          }
         }
       }
     }
