@@ -98,15 +98,27 @@ main {
   .content-productive {
     margin-top: 160px;
 
+    @media @tablet {
+      margin-top: 142px;
+    }
+
     .content-background {
       padding: 0;
       margin: 0 0 -10px 0;
+
+      @media @tablet {
+        width: 100%;
+      }
     }
 
     .productive-content {
       padding: 67px 5.5% 109px 5.5%;
       background: #f7f7fe;
       .center(row, space-between, flex-start, nowrap);
+
+      @media @tablet {
+        .center(column-reverse, flex-start, center, nowrap);
+      }
 
       h2 {
         padding-bottom: 28px;
@@ -186,6 +198,12 @@ main {
       .productive-content-image {
         padding-top: 30px;
         max-width: 42.6%;
+
+        @media @tablet {
+          padding-top: 0;
+          margin-top: 70px;
+          max-width: 96%;
+        }
       }
     }
   }
