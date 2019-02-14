@@ -119,34 +119,39 @@ main {
       @media @tablet {
         .center(column-reverse, flex-start, center, nowrap);
       }
+      .productive-content-text {
+        h2 {
+          padding-bottom: 28px;
 
-      h2 {
-        padding-bottom: 28px;
-      }
+          @media @tablet {
+            margin-top: 160px;
+            font-size: 3.2rem;
+          }
+        }
 
-      p {
-        max-width: 73%;
-        font-size: 1.6rem;
-        line-height: 1.5;
-        padding-bottom: 17px;
-      }
+        p {
+          max-width: 73%;
+          font-size: 1.6rem;
+          line-height: 1.5;
+          padding-bottom: 17px;
+        }
 
-      a {
-        display: inline-block;
-        position: relative;
-        width: 166px;
-        padding-bottom: 7px;
-        font-size: 1.6rem;
-        border-bottom: 1px solid @moderate-cyan;
-        color: @moderate-cyan;
-        margin-bottom: 45px;
+        a {
+          display: inline-block;
+          position: relative;
+          width: 166px;
+          padding-bottom: 7px;
+          font-size: 1.6rem;
+          border-bottom: 1px solid @moderate-cyan;
+          color: @moderate-cyan;
+          margin-bottom: 45px;
 
-        img {
-          padding: 2px 0 0 4%;
-          position: absolute;
+          img {
+            padding: 2px 0 0 4%;
+            position: absolute;
+          }
         }
       }
-
       .quote {
         background: white;
         padding: 27px 0 0 4.5%;

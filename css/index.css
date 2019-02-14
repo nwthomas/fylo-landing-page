@@ -479,16 +479,22 @@ main .content-productive .productive-content {
     flex-wrap: nowrap;
   }
 }
-main .content-productive .productive-content h2 {
+main .content-productive .productive-content .productive-content-text h2 {
   padding-bottom: 28px;
 }
-main .content-productive .productive-content p {
+@media (max-width: 800px) {
+  main .content-productive .productive-content .productive-content-text h2 {
+    margin-top: 160px;
+    font-size: 3.2rem;
+  }
+}
+main .content-productive .productive-content .productive-content-text p {
   max-width: 73%;
   font-size: 1.6rem;
   line-height: 1.5;
   padding-bottom: 17px;
 }
-main .content-productive .productive-content a {
+main .content-productive .productive-content .productive-content-text a {
   display: inline-block;
   position: relative;
   width: 166px;
@@ -498,7 +504,7 @@ main .content-productive .productive-content a {
   color: hsl(170, 45%, 43%);
   margin-bottom: 45px;
 }
-main .content-productive .productive-content a img {
+main .content-productive .productive-content .productive-content-text a img {
   padding: 2px 0 0 4%;
   position: absolute;
 }
