@@ -2,8 +2,6 @@
 
 # Fylo Company Landing Page
 
-## Introduction
-
 This is the landing page for a fictitious company, Fylo. Please enjoying poking around this fully responsive, styled page.
 
 ## Screenshot
@@ -12,8 +10,18 @@ This is the landing page for a fictitious company, Fylo. Please enjoying poking 
 
 ## Getting Started
 
+### Opening the Site
+
 - Fork or directly clone this repository to your local machine
 - Open `index.html` in your browser of choice
+- Enjoy!
+
+### Editing the Site
+
+- Fork or directly clone this repository to your local machine
+- Open `index.html` in your browser of choice
+- Start the LESS compiler by running `less-watch-compiler less css index.less` in the root directory
+- Edit any HTML or CSS file acorrding to your tastes
 - Enjoy!
 
 ## Built With
