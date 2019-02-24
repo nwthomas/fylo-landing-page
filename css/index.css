@@ -169,6 +169,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+label,
+input {
+  -webkit-appearance: none;
+}
 .container {
   max-width: 1440px;
   width: 100%;
@@ -373,13 +377,17 @@ footer .social-links div {
   cursor: pointer;
   border: 1px solid white;
   border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+@media (max-width: 800px) {
+  footer .social-links div {
+    margin: 0 3%;
+  }
 }
 footer .social-links div img {
   width: 50px;
   padding: 10px;
-}
-footer .social-links div:nth-child(even) {
-  margin: 0 3%;
 }
 main .home-header {
   margin-top: 70px;
