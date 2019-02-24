@@ -14,9 +14,13 @@
     @media @tablet {
       width: 32%;
     }
+
+    @media @mobile {
+      width: 200px;
+    }
   }
 
-  div {
+  .nav-bar {
     margin-top: 15px;
     width: 100%;
     .center(row, flex-end, flex-start, nowrap);
@@ -24,6 +28,11 @@
     @media @tablet {
       margin-right: 2%;
       margin-top: 10px;
+    }
+
+    @media @mobile {
+      .center(column, flex-start, flex-end, nowrap);
+      margin-top: 0;
     }
 
     a {
@@ -37,6 +46,10 @@
       @media @tablet {
         font-size: 2.45rem;
         margin-left: 9.5%;
+      }
+
+      @media @mobile {
+        margin-bottom: 25px;
       }
     }
   }
