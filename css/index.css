@@ -462,7 +462,7 @@ main .content-productive .content-background {
   }
 }
 main .content-productive .productive-content {
-  padding: 67px 5.5% 109px 5.5%;
+  padding: 67px 5.5% 107px 5.5%;
   background: #f7f7fe;
   display: flex;
   flex-direction: row;
@@ -477,6 +477,7 @@ main .content-productive .productive-content {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
+    padding-bottom: 84px;
   }
 }
 main .content-productive .productive-content .productive-content-text h2 {
@@ -591,7 +592,7 @@ main .content-productive .productive-content .quote .quote-picture-position {
   }
 }
 main .content-productive .productive-content .quote .quote-picture-position img {
-  padding: o;
+  padding: 0;
   max-width: 10%;
   border-radius: 50%;
   -moz-border-radius: 50%;
@@ -642,21 +643,51 @@ main .content-access {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: nowrap;
-  margin-top: -2px;
   padding: 105px 5.5% 88px 5.5%;
   background: hsl(238, 22%, 44%);
+}
+@media (max-width: 800px) {
+  main .content-access {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
 }
 main .content-access .access-text {
   width: 41%;
 }
+@media (max-width: 800px) {
+  main .content-access .access-text {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
 main .content-access .access-text h3 {
   color: white;
+}
+@media (max-width: 800px) {
+  main .content-access .access-text h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.8rem;
+  }
 }
 main .content-access .access-text p {
   color: white;
   padding-top: 24px;
   font-size: 1.71rem;
   line-height: 1.41;
+}
+@media (max-width: 800px) {
+  main .content-access .access-text p {
+    margin: 18px auto;
+    width: 85%;
+    font-size: 2.7rem;
+    line-height: 1.55;
+    text-align: center;
+  }
 }
 main .content-access .access-email {
   display: flex;
@@ -666,6 +697,11 @@ main .content-access .access-email {
   flex-wrap: nowrap;
   padding-top: 7px;
   width: 40.7%;
+}
+@media (max-width: 800px) {
+  main .content-access .access-email {
+    width: 100%;
+  }
 }
 main .content-access .access-email .cta-email {
   height: 48px;
@@ -677,6 +713,14 @@ main .content-access .access-email .cta-email {
   padding-left: 23px;
   font-size: 1.2rem;
   color: hsl(0, 0%, 75%);
+}
+@media (max-width: 800px) {
+  main .content-access .access-email .cta-email {
+    margin: 23px auto 0;
+    width: 73%;
+    height: 64px;
+    font-size: 1.8rem;
+  }
 }
 main .content-access .access-email .cta-submit {
   margin-top: 16px;
@@ -703,4 +747,12 @@ main .content-access .access-email .cta-submit:hover {
 main .content-access .access-email .cta-submit .footer {
   background: hsl(243, 87%, 12%);
   padding-bottom: 300px;
+}
+@media (max-width: 800px) {
+  main .content-access .access-email .cta-submit {
+    margin: 16px auto;
+    width: 73%;
+    height: 64px;
+    font-size: 1.8rem;
+  }
 }

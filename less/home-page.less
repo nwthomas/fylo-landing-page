@@ -112,12 +112,13 @@ main {
     }
 
     .productive-content {
-      padding: 67px 5.5% 109px 5.5%;
+      padding: 67px 5.5% 107px 5.5%;
       background: #f7f7fe;
       .center(row, space-between, flex-start, nowrap);
 
       @media @tablet {
         .center(column-reverse, flex-start, center, nowrap);
+        padding-bottom: 84px;
       }
       .productive-content-text {
         h2 {
@@ -221,7 +222,7 @@ main {
           }
 
           img {
-            padding: o;
+            padding: 0;
             max-width: 10%;
             .border-radius(50%);
           }
@@ -272,15 +273,29 @@ main {
 
   .content-access {
     .center(row, space-between, flex-start, nowrap);
-    margin-top: -2px;
     padding: 105px 5.5% 88px 5.5%;
     background: @desaturated-blue;
+
+    @media @tablet {
+      .center(column, flex-start, center, nowrap);
+    }
 
     .access-text {
       width: 41%;
 
+      @media @tablet {
+        width: 100%;
+        margin-top: 5px;
+      }
+
       h3 {
         color: white;
+
+        @media @tablet {
+          width: 100%;
+          text-align: center;
+          font-size: 3.8rem;
+        }
       }
 
       p {
@@ -288,6 +303,14 @@ main {
         padding-top: 24px;
         font-size: 1.71rem;
         line-height: 1.41;
+
+        @media @tablet {
+          margin: 18px auto;
+          width: 85%;
+          font-size: 2.7rem;
+          line-height: 1.55;
+          text-align: center;
+        }
       }
     }
 
@@ -295,6 +318,10 @@ main {
       .center(column, flex-start, flex-start, nowrap);
       padding-top: 7px;
       width: 40.7%;
+
+      @media @tablet {
+        width: 100%;
+      }
 
       .cta-email {
         height: 48px;
@@ -304,12 +331,26 @@ main {
         padding-left: 23px;
         font-size: 1.2rem;
         color: @light-gray;
+
+        @media @tablet {
+          margin: 23px auto 0;
+          width: 73%;
+          height: 64px;
+          font-size: 1.8rem;
+        }
       }
 
       .cta-submit {
         margin-top: 16px;
         .btn-template();
         height: 48px;
+
+        @media @tablet {
+          margin: 16px auto;
+          width: 73%;
+          height: 64px;
+          font-size: 1.8rem;
+        }
       }
     }
   }
